@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt mit NVIDIA PhysX Systemsoftware</title>
+</head>
+<body>
+    <h1>Entwicklung eines Projekts mit NVIDIA PhysX Systemsoftware</h1>
+    
+    <h2>Schritt 1: Initiale Planung und Konzept</h2>
+    <ol>
+        <li><strong>Projektziel definieren</strong>: Überlege dir, was dein Hauptziel ist. Möchtest du ein Spiel entwickeln, eine Simulation oder etwas anderes? Sei spezifisch. Zum Beispiel: "Ein Spiel, bei dem der Spieler in einer Stadt herumlaufen und alle Gebäude zerstören kann".</li>
+        <li><strong>Schlüsselmerkmale notieren</strong>: Schreibe die wichtigsten Merkmale auf, die dein Projekt haben soll. Beispielsweise:
+            <ul>
+                <li>Zerstörbare Gebäude und Strukturen</li>
+                <li>Realistische Partikeleffekte wie Staub und Trümmer</li>
+                <li>Reaktionen auf unterschiedliche Arten von Waffen oder Explosionen</li>
+            </ul>
+        </li>
+        <li><strong>Werkzeugauswahl</strong>: Entscheide, welche Softwaretools und Entwicklungsumgebungen du verwenden möchtest. Hier einige Empfehlungen:
+            <ul>
+                <li><strong>Games Engines:</strong>
+                    <ul>
+                        <li><strong>Unreal Engine</strong>: Bietet hervorragende Unterstützung für Physik-Simulationen und zerstörbare Umgebungen.</li>
+                        <li><strong>Unity</strong>: Eine weitere beliebte Engine, die mit PhysX kompatibel ist.</li>
+                    </ul>
+                </li>
+                <li><strong>Entwicklungsumgebungen:</strong>
+                    <ul>
+                        <li>Unreal Engine Blueprints oder C++ für Unreal Engine.</li>
+                        <li>C# für Unity.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ol>
+    
+    <h2>Schritt 2: Vorbereitung und Einrichtung</h2>
+    <ol>
+        <li><strong>Installationen</strong>: Lade und installiere die notwendigen Werkzeuge:
+            <ul>
+                <li><a href="https://www.unrealengine.com/">Unreal Engine</a> oder <a href="https://unity.com/">Unity</a></li>
+                <li>Aktuellste Version der <a href="https://developer.nvidia.com/physx-sdk">NVIDIA PhysX SDK</a> (Software Development Kit) von der NVIDIA Entwicklerseite</li>
+            </ul>
+        </li>
+        <li><strong>Einarbeitung</strong>: Nutze Tutorials und Dokumentationen, um dich mit den Grundlagen der ausgewählten Engine und der PhysX SDK vertraut zu machen. Hier sind einige nützliche Ressourcen:
+            <ul>
+                <li>Für Unreal Engine: <a href="https://docs.unrealengine.com/">Unreal Engine – Getting Started</a></li>
+                <li>Für Unity: <a href="https://learn.unity.com/">Unity Learn</a></li>
+            </ul>
+        </li>
+    </ol>
+    
+    <h2>Schritt 3: Erstes einfaches Projekt</h2>
+    <ol>
+        <li><strong>Projekt erstellen</strong>: Starte deine Game Engine und erstelle ein neues Projekt. Richte ein einfaches Szenario ein (zum Beispiel eine leere Landschaft und ein paar Gebäude).</li>
+        <li><strong>PhysX integrieren</strong>:
+            <ul>
+                <li>Unreal Engine: Hier gibt es bereits integrierte PhysX-Unterstützung. Stelle sicher, dass du die Physik-Engine in deinem Projekt aktiviert hast.</li>
+                <li>Unity: Importiere die benötigten PhysX-Pakete und konfiguriere sie gemäß den Anweisungen in der Dokumentation.</li>
+            </ul>
+        </li>
+        <li><strong>Erstes zerstörbares Objekt erstellen</strong>:
+            <ul>
+                <li>In Unreal Engine: Nutze die Destructible Mesh-Funktion, um ein zerstörbares Objekt zu erstellen.</li>
+                <li>In Unity: Verwende die PhysX-Komponenten, um ein einfaches Gebäude zu modellieren, das bei einer Explosion zerstört wird.</li>
+            </ul>
+        </li>
+    </ol>
+    
+</body>
+</html>
+
+<!--
+by [La{}Kost87], TrueDEL(+)
+-->
