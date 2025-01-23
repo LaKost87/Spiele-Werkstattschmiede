@@ -1,0 +1,87 @@
+<?php
+function getMenu() {
+    return [
+        "Option 1: Netzwerkverbindung überprüfen",
+        "Option 2: Update-Help mit ErrorAction SilentlyContinue ausführen",
+        "Option 3: Update-Help mit SourcePath ausführen",
+        "Option 4: Modulmanifestdateien überprüfen"
+    ];
+}
+
+function getExampleCode($option) {
+    switch ($option) {
+        case 1:
+            return "Stelle sicher, dass dein Computer mit dem Internet verbunden ist.";
+        case 2:
+            return '```powershell
+Update-Help -ErrorAction SilentlyContinue
+```';
+        case 3:
+            return '```powershell
+Save-Help -DestinationPath C:\\PowershellHelp
+Update-Help -SourcePath C:\\PowershellHelp
+```';
+        case 4:
+            return "Stelle sicher, dass die HelpInfoUri-Eigenschaft im Modulmanifest gültig ist.";
+        default:
+            return "Ungültige Option.";
+    }
+}
+
+function displayMenu() {
+    $menu = getMenu();
+    echo "<h1>PowerShell Update-Help Optionen</h1>";
+    echo "<ul>";
+    foreach ($menu as $index => $item) {
+        echo "<li><a href=\"?option=" . ($index + 1) . "\">$item</a></li>";
+    }
+    echo "</ul>";
+}
+
+function displayExampleCode($option) {
+    $code = getExampleCode($option);
+    echo "<h2>Beispielcode für Option $option</h2>";
+    echo "<pre>$code</pre>";
+    echo "<button onclick=\"copyToClipboard('$code')\">Code kopieren</button>";
+}
+
+function copyToClipboard($text) {
+    echo "<script>
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(function() {
+            alert('Code kopiert!');
+        }, function(err) {
+            alert('Fehler beim Kopieren: ', err);
+        });
+    }
+    </script>";
+}
+
+if (isset($_GET['option'])) {
+    $option = intval($_GET['option']);
+    displayExampleCode($option);
+} else {
+    displayMenu();
+}
+
+copyToClipboard('');
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- bY La[]Kost87, TrueDEL(+) -->
