@@ -85,3 +85,24 @@ copyToClipboard('');
 
 
 <!-- bY La[]Kost87, TrueDEL(+) -->
+<!-- 
+PS C:\WINDOWS\system32> Update-Help Update-Help : Fehler beim Aktualisieren von Hilfe für die Module "ConfigDefender, ConfigDefenderPerformance" mit den Benutzeroberflächenkulturen {de-DE}: Die XML-Datei "HelpInfo" für die Benutzeroberflächenkultur de-DE kann nicht abgerufen werden. Stellen Sie sicher, dass die HelpInfoUri-Eigenschaft im Modulmanifest gültig ist, oder überprüfen Sie die Netzwerkverbindung, und führen Sie den Befehl dann erneut aus. In Zeile:1 Zeichen:1 + Update-Help + ~~~~~~~~~~~ + CategoryInfo : ResourceUnavailable: (:) [Update-Help], Exception + FullyQualifiedErrorId : UnableToRetrieveHelpInfoXml,Microsoft.PowerShell.Commands.UpdateHelpComma
+Es sieht so aus, als ob beim Ausführen des Update-Help-Cmdlets ein Fehler auftritt, weil die XML-Datei "HelpInfo" für die Benutzeroberflächenkultur de-DE nicht abgerufen werden kann. Dies könnte an einem fehlenden oder ungültigen HelpInfoUri-Eigenschaft im Modulmanifest liegen.
+
+Hier sind einige Schritte, die du ausprobieren kannst, um das Problem zu beheben:
+
+Überprüfe die Netzwerkverbindung: Stelle sicher, dass dein Computer mit dem Internet verbunden ist, da Update-Help die Hilfedateien aus dem Internet herunterlädt.
+
+Führe den Befehl mit dem Parameter -ErrorAction SilentlyContinue aus: Dies ignoriert Fehler und setzt den Update-Vorgang fort.
+
+powershell
+Update-Help -ErrorAction SilentlyContinue
+Verwende den Parameter -SourcePath: Wenn du keine Internetverbindung hast, kannst du die Hilfedateien zuerst mit dem Save-Help-Cmdlet herunterladen und dann den Update-Help-Befehl mit dem -SourcePath-Parameter ausführen.
+
+powershell
+Save-Help -DestinationPath C:\PowershellHelp
+Update-Help -SourcePath C:\PowershellHelp
+Überprüfe die Modulmanifestdateien: Stelle sicher, dass die HelpInfoUri-Eigenschaft im Modulmanifest gültig ist.
+
+Ich hoffe, das hilft dir weiter! Wenn du noch Fragen hast oder weitere Unter
+-->
