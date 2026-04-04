@@ -1,0 +1,23 @@
+
+
+---
+
+## 🎨 Shader‑ & Visualizer‑Experiment – Reminder  
+**Idee:** Weiterentwicklung des Bildschirm‑Feedback‑Loops (recursive display) zu einem interaktiven Effektmodul.  
+**Ziel:**  
+- Shader‑Experimente (Tunnel, Mirror‑Loops, Distortion‑Maps)  
+- Visualizer‑Module (Audio‑Reactive, Motion‑Reactive, Farbgradient‑Morphing)  
+- Optional: Mini‑Game‑Mechanik inspiriert von *F‑Zero X* / Tron‑Tunnels  
+- Fokus auf emergente Effekte durch Feedback + Transformation  
+
+**Notizen:**  
+- Verhalten ähnelt 3‑türigem Spiegel → unendliche Perspektivkaskade  
+- Digital erweiterbar: Rotation, Noise, Glow, Input‑Reaktion  
+- Potenzial für ShaderToy‑ähnliche Sandbox  
+- Später integrierbar als Modul in Engine/Projektstruktur  
+
+---
+
+**Issue‑Vorlage**, eine **Roadmap‑Card**, oder eine **README‑Section** 
+
+*AGPLv3
