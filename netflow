@@ -1,0 +1,39 @@
+## 🎮 Netcode-Vision: Flow-first statt Legacy-Müll
+
+**These:**  
+Der aktuelle Standard-Netcode in gängigen Engines basiert auf alten Paradigmen (Server-first, Tick-Altlasten, DSL-Ära) und steht heute dem eigentlichen Ziel im Weg: **spielerzentriertem Flow**.
+
+**Zielbild für die Spielewerkstattschmiede:**
+
+- **Flow-first-Architektur:**  
+  Netcode wird nicht um Technik gebaut, sondern um das Erlebnis: präzise Inputs, minimale Latenz, keine „Server sagt nein“-Momente.
+
+- **Modern statt fossil:**  
+  Kein Aufsetzen auf vermoderte, für alte Anforderungen gebaute Systeme, sondern ein eigenständiger Netcode, der 2026+ als Basis denkt – nicht 2006.
+
+- **Modularer Kern:**  
+  Sync, Prediction, Reconciliation, Interpolation als klar getrennte, austauschbare Module statt monolithischem Blackbox-Netcode.
+
+- **Spieler als Referenzpunkt:**  
+  Der Server bleibt autoritativ, aber der **Flow des Spielers** ist die oberste Instanz bei Designentscheidungen.
+
+- **Paradigmenwechsel:**  
+  Weg von „Wir biegen alten Netcode hin“  
+  hin zu „Wir liefern einen neuen Standard, wie sich vernetztes Spielen anfühlen kann“.
+
+> Arbeitstitel: **„FlowNet“ – ein Netcode, der nicht nur Daten synchronisiert, sondern Spielgefühl.**
+
+
+
+
+
+
+
+
+
+
+
+
+
+bY lakost87@icloud.com , truedelplus@gmail.com , cPilot(87)
+* APGLv3
